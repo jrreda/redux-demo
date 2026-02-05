@@ -5,17 +5,19 @@ import { Provider } from 'react-redux'
 import store from './redux/store'
 import NewCakeContainer from './components/NewCakeContainer'
 import ItemContainer from './components/ItemContainer'
+import UserContainer from './components/UserContainer'
 
 function App() {
   return (
     <Provider store={store}>
       <div>
-        <ItemContainer cake />
+        <UserContainer />
+        {/* <ItemContainer cake />
         <ItemContainer />
         <CakeContainer />
         <HooksCakeContainer />
         <IceCreamContainer />
-        <NewCakeContainer />
+        <NewCakeContainer /> */}
       </div>
     </Provider>
   )
